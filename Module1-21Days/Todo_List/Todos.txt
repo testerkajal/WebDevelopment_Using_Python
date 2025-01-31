@@ -1,4 +1,7 @@
-make pizza
-make biryni
-pasta
-pizza
+cook food
+wash clothes
+hello world
+kajal
+hello
+hello
+my name
