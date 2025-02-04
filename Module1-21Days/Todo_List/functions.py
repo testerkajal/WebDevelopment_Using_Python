@@ -6,3 +6,7 @@ def get_todos(filepath="Todos.txt"):
 def modify_todos(todos_arg, filepath="Todos.txt"):
     with open(filepath, 'w') as file:
         file.writelines(todos_arg)  # this will return a list
+
+def modify_todos(todos_arg, filepath="Todos.txt"):
+    with open(filepath, 'w') as file:
+        file.writelines(todos_arg)  # this will return a list
