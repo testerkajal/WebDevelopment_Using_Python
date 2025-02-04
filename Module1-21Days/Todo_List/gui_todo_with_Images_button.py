@@ -1,15 +1,16 @@
-import os.path
+from openpyxl.styles.colors import BLACK
+
 import functions
 import FreeSimpleGUI as sg  # ✅ Corrected import
 
-from openpyxl.styles.colors import BLACK
+from PIL import Image, ImageTk
 
 
 # GUI Layout
 sg.theme("Black") #can google FreeSimpleGUI themes and check images section and apply desired theme.
 label = sg.Text("Type in To-do")
 input_box = sg.InputText(tooltip="Enter Todo", key="Todo")
-add_button = sg.Button("Add")
+add_button = sg.Button(size=(2,1), image_source="add1.png", mouseover_colors='LightBlue2',tooltip="Add Todos", key="Add")
 edit_button = sg.Button("Edit")
 complete_button = sg.Button("Complete")
 exit_button = sg.Button("Exit")
@@ -26,7 +27,7 @@ while True:
     #print(event, value)
 
     if event == sg.WIN_CLOSED:  # ✅ Proper exit condition
-      break
+        break
 
     match event:
         case "Add":
