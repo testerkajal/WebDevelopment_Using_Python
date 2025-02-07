@@ -15,7 +15,7 @@ def generate_pdf(df):
                 pdf.line(10, i, 200, i)
 
             pdf.ln(265)
-            pdf.set_font(family="Times", style="I", size=8)
+            pdf.set_font(family="Times", style="I", size=10)
             pdf.set_text_color(100, 100, 100)
             pdf.cell(w=0, h=10, txt=row["Topic"], align='R')
 
