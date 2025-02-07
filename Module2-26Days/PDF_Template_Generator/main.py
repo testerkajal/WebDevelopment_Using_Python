@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import os
 from generate_pdf import generate_pdf
 from help import display_help
 
